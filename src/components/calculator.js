@@ -1,3 +1,4 @@
+import React from 'reaact';
 import PropTypes from 'prop-types';
 import './calculator.css';
 
