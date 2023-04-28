@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
 import './calculator.css';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import CalculatorButton from './CalculatorButton';
+import OutputDisplay from './OutputDisplay';
 
 const Calculator = () => {
   const [result, setResult] = useState('');
@@ -39,28 +40,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-};
-
-const CalculatorButton = ({ character, className, handleOnClick }) => (
-  <button type="button" className={className} onClick={handleOnClick}>{character}</button>
-);
-
-CalculatorButton.propTypes = {
-  character: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  handleOnClick: PropTypes.func.isRequired,
-};
-
-const OutputDisplay = ({ contented }) => (
-  <div className="outputDisplay">{contented}</div>
-);
-
-OutputDisplay.propTypes = {
-  contented: PropTypes.string,
-};
-
-OutputDisplay.defaultProps = {
-  contented: '0',
 };
 
 export default Calculator;
