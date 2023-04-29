@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import './APIquote.css';
+import { v4 as uuidv4 } from 'uuid';
 
 const APIquote = () => {
+  const myuuid = uuidv4();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, sethasError] = useState(null);
@@ -34,13 +36,12 @@ const APIquote = () => {
     <ul>
       {data.map((item) => (
         <>
-          <p key={item.author}>{item.quote}</p>
-          <quote key={item.author}><i>{item.author}</i></quote>
+          <p key={myuuid}>{item.quote}</p>
+          <p key={myuuid}><i>{item.author}</i></p>
         </>
       ))}
     </ul>
   );
 };
-// rqBsI0z9wOGAqafKnCkkEA==KMMCPBuS2rX5v54e
 
 export default APIquote;
