@@ -1,28 +1,23 @@
 import { useState, useEffect } from 'react';
-import './APIquote.css';
 
-const APIquote = () => {
+function App() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, sethasError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = 'https://api.api-ninjas.com/v1/quotes?category=life';
       try {
         setIsLoading(true);
-        const res = await fetch(url, {
-          method: 'GET',
-          headers: { 'X-Api-Key': 'rqBsI0z9wOGAqafKnCkkEA==KMMCPBuS2rX5v54e' },
-          contentType: 'application/json',
-        });
-        const response = await res.json();
-        setData(response);
+        const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+        const json = await res.json();
+        setData(json);
       } catch (error) {
         sethasError(true);
       }
       setIsLoading(false);
     };
+
     fetchData();
   }, [setData, setIsLoading]);
 
@@ -33,13 +28,10 @@ const APIquote = () => {
   return (
     <ul>
       {data.map((item) => (
-        <div key={item.author}>
-          <p>{item.quote}</p>
-          <p><i>{item.author}</i></p>
-        </div>
+        <li key={item.id}>{item.title}</li>
       ))}
     </ul>
   );
-};
+}
 
-export default APIquote;
+export default App;
