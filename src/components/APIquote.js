@@ -36,8 +36,15 @@ const APIquote = () => {
     <ul>
       {data.map((item) => (
         <>
-          <p key={myuuid}>{item.quote}</p>
-          <p key={myuuid}><i>{item.author}</i></p>
+
+{data.map((item) => (
+        <li key={myuuid}>
+          <p>{item.quote}</p>
+          <p>
+            <i>{item.author}</i>
+          </p>
+        </li>
+))}
         </>
       ))}
     </ul>
