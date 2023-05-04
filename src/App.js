@@ -1,13 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import APIquote from './components/APIquote';
-import Calculator from './components/calculator';
+import Layout from './components/Layout';
+import NotMatch from './routes/NotMatch';
+import APIquote from './routes/Quote';
+import Home from './routes/Home';
+import DoMaths from './routes/DoMaths';
 
 function App() {
   return (
-    <div className="App">
-      <APIquote />
-      <Calculator />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<DoMaths />} />
+        <Route path="quote" element={<APIquote />} />
+        <Route path="*" element={<NotMatch />} />
+      </Route>
+    </Routes>
   );
 }
 
