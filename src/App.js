@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './components/Layout';
 import NotMatch from './routes/NotMatch';
-import APIquote from './routes/Quote';
+import APIquote from './components/APIquote';
 import Home from './routes/Home';
 import DoMaths from './routes/DoMaths';
 
