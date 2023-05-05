@@ -26,7 +26,7 @@ const APIquote = () => {
     fetchData();
   }, [setData, setIsLoading]);
 
-  if (hasError) return <div>An error occured while loading data</div>;
+  if (hasError) return <div>An error occured while loading data. Please check your connection</div>;
 
   if (isLoading) return <div>Loading...</div>;
 
