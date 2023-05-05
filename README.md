@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- coming soon...
+- [Click here](https://math-magicians-app-8oop.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
