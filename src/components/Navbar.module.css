@@ -1,0 +1,22 @@
+li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.textLog {
+  padding-left: 15px;
+}
