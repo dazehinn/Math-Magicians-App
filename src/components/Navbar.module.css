@@ -19,12 +19,12 @@ a {
 
 /* unvisited link */
 a:link {
-  color:wheat;
+  color: wheat;
 }
 
 /* visited link */
 a:visited {
-  color: rgba(245,222,179,0.5)  ;
+  color: rgba(245, 222, 179, 0.5);
 }
 
 /* mouse over link */
@@ -36,7 +36,6 @@ a:focus {
   color: white;
   text-decoration: underline;
 }
-
 
 .textLog {
   padding-left: 15px;
