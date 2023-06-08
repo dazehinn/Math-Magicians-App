@@ -1,6 +1,3 @@
-
-
-import Calculator from '../../components/calculator';
 import { render, screen, fireEvent } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import CalculatorButton from '../../components/CalculatorButton';
