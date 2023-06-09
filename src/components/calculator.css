@@ -72,3 +72,26 @@ button {
 button:hover {
   border: 1px solid #a1a1a1;
 }
+
+body {
+  background-color: rgb(31, 23, 23);
+}
+
+.sectionHome {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 0 30px;
+}
+
+h2 {
+  font-size: 30px;
+  color: wheat;
+  margin-bottom: 10px;
+}
+
+p {
+  padding-bottom: 15px;
+  text-align: justify;
+  font-size: 18px;
+  color: silver;
+}

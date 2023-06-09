@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pad Component Tree 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+  type="button"
+>
+  1
+</button>
+`;

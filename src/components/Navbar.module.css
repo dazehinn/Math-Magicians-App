@@ -3,6 +3,7 @@ li {
   display: inline;
   padding-right: 20px;
   font-size: 20px;
+  color: wheat;
 }
 
 .navbar {
@@ -12,11 +13,31 @@ li {
   border-bottom: 1px solid grey;
 }
 
-.active {
-  color: blue;
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: wheat;
+}
+
+/* visited link */
+a:visited {
+  color: rgba(245, 222, 179, 0.5);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgba(228, 223, 214, 0.5);
+}
+
+a:focus {
+  color: white;
   text-decoration: underline;
 }
 
 .textLog {
   padding-left: 15px;
+  color: wheat;
 }

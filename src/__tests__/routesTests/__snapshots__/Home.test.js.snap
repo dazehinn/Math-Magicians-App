@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Tree 1`] = `
+<div
+  className="main"
+>
+  <h2>
+    Welcome to our page
+  </h2>
+  <p>
+    Math Magicians is an app for all lovers of mathematics. It is build with React and much love. As a user, you are given access to a simple calcular and quotes from famous persons about life. Feel free to explore this app and send your impressions by  
+    <a
+      href={true}
+      style={
+        Object {
+          "color": "lightblue",
+          "textDecoration": "underline",
+        }
+      }
+    >
+      clicking here
+    </a>
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat eius quod ducimus iusto sit impedit etnam quos aliquam maiores expedita, similique libero voluptate nihil hic mollitia maxime modi soluta officia cumque error. Pariatur libero unde nobis cupiditate voluptatum ipsa itaque natus rem culpa.
+  </p>
+</div>
+`;

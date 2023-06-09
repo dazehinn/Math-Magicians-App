@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Component Tree 1`] = `
+<div
+  className="outputDisplay"
+>
+  0
+</div>
+`;
